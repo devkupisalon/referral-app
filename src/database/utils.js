@@ -1,5 +1,5 @@
-import logger from '../logs/logger.js';
-import { IP_INFO } from './models';
+import logger from '../../logs/logger.js';
+import { IP_INFO } from './models.js';
 
 const module = import.meta.filename;
 

@@ -1,5 +1,5 @@
 import { Sequelize, DataTypes, Model } from 'sequelize';
-import logger from '../logs/logger.js';
+import logger from '../../logs/logger.js';
 import { constants } from '../config/constants.js';
 
 const {
@@ -38,4 +38,4 @@ sequelize.sync()
     .then(() => logger.info('Models synced successfully', { module }))
     .catch(err => logger.error(`Error syncing models: ${err}`, { module }));
 
-export { IP_INFO };
+export { IP_INFO, MANAGERS };

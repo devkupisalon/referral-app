@@ -1,4 +1,4 @@
-import logger from '../../logs/logger.js';
+import logger from '../../../logs/logger.js';
 import { get_all_data } from '../../utils/google/sheets.js';
 import { Metrics } from '../../config/models.js';
 import { constants } from "../../config/constants.js";

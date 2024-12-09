@@ -1,5 +1,5 @@
 import gauth from "./gauth.js";
-import logger from "../../logs/logger.js";
+import logger from "../../../logs/logger.js";
 
 import { v4 as uuidv4 } from "uuid";
 import { constants } from "../../config/constants.js";
@@ -76,7 +76,7 @@ const save_user = async (obj) => {
     const { obj_values } = await get_data(REFERRAL_SPREADSHEET_ID, USERS);
     const row = get_last_key(obj_values) + 2;
     const range = `${USERS}!A${row}`;
-    const folder_id await create_folder(obj.name);
+    const folder_id = await create_folder(obj.name);
     const values = [uid, ...Object.values(obj), folder_id];
     const { data } = await update_data(REFERRAL_SPREADSHEET_ID, range, { values });
     if (data.spreadsheetId) {

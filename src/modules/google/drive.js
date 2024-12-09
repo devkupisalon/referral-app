@@ -1,5 +1,5 @@
 import gauth from "./gauth.js";
-import logger from "../../logs/logger.js";
+import logger from "../../../logs/logger.js";
 
 import { constants } from "../../constants.js";
 

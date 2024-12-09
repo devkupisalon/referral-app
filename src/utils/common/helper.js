@@ -79,7 +79,7 @@ const get_row_by_link_and_user = (obj, ref_link, id) => {
     return null;
 };
 
-const get_values = (data) => {
+const get_values_for_monitor = (data) => {
     const {
         timestamp,
         type,

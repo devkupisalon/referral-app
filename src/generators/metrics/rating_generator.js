@@ -1,4 +1,4 @@
-import logger from '../../logs/logger.js';
+import logger from '../../../logs/logger.js';
 import { get_formatted_date } from '../../utils/common/helper.js';
 
 const module = import.meta.filename;
