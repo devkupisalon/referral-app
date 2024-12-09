@@ -1,0 +1,25 @@
+{
+  "name": "referal-app-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-ip": "^1.0.4",
+    "googleapis": "^144.0.0",
+    "moment-timezone": "^0.5.46",
+    "node-telegram-bot-api": "^0.66.0",
+    "path": "^0.12.7",
+    "pg": "^8.13.1",
+    "shortid": "^2.2.16",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
