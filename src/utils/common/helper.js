@@ -20,7 +20,7 @@ const get_iso_date = (date) => {
     return new Date(date).toISOString();
 };
 
-const objify = (data) => {
+const convert_array_to_object = (data) => {
     const headers = data[0];
     return {
         obj_values: data.slice(1).reduce((acc, row, i) => {
@@ -113,7 +113,7 @@ const create_monitor_row = (uid, data) => {
 export {
     number_to_column,
     get_column_number_by_value,
-    get_values,
+    get_values_for_monitor,
     objify,
     get_last_key,
     get_row_by_link_and_user,
